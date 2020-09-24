@@ -1,0 +1,42 @@
+﻿<Window x:Class="DragNDrop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DragNDrop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="1" Background="AliceBlue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Name="_answerPanel" Grid.Row="1" Grid.Column="1" Background="Beige"/>
+        </Grid>
+
+        <TextBlock Text="Red or Green?" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <StackPanel Name="_leftPanel" Grid.Row="1" Grid.Column="0" Background="Green" AllowDrop="True" DragEnter="_leftPanel_DragEnter" Drop="_leftPanel_Drop"/>
+        <StackPanel Name="_rightPanel" Grid.Row="1" Grid.Column="2" Background="Red" AllowDrop="True" DragEnter="_rightPanel_DragEnter" Drop="_rightPanel_Drop"/>
+
+        <TextBlock Text="Good answers:" Grid.Column="0" Grid.Row="2"/>
+        <TextBlock Text="{Binding GoodAnswers}" Grid.Column="1" Grid.Row="2"/>
+    </Grid>
+</Window>
