@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitKeywordExample", "ImplicitKeywordExample\ImplicitKeywordExample.csproj", "{9E08A7F3-0B36-430B-BE8D-146F2E6B7FFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplicitKeywordExample", "ExplicitKeywordExample\ExplicitKeywordExample.csproj", "{9C16B87F-3F99-43F8-8691-C246C325E825}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E08A7F3-0B36-430B-BE8D-146F2E6B7FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E08A7F3-0B36-430B-BE8D-146F2E6B7FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E08A7F3-0B36-430B-BE8D-146F2E6B7FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E08A7F3-0B36-430B-BE8D-146F2E6B7FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C16B87F-3F99-43F8-8691-C246C325E825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C16B87F-3F99-43F8-8691-C246C325E825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C16B87F-3F99-43F8-8691-C246C325E825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C16B87F-3F99-43F8-8691-C246C325E825}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B1A6F3E-D423-41D5-A07D-E819F5190D30}
+	EndGlobalSection
+EndGlobal
