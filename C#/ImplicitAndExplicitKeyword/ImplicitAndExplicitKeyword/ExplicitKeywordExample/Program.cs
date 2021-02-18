@@ -1,5 +1,6 @@
 ﻿using System;
 
+//https://www.dotnetperls.com/explicit
 class Apartment
 {
     public string Name { get; set; }

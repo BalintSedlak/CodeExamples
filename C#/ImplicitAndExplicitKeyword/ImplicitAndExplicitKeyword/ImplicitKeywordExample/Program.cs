@@ -2,6 +2,7 @@
 
 namespace ImplicitKeywordExample
 {
+    //https://www.dotnetperls.com/explicit
     class Machine
     {
         public int _value;
