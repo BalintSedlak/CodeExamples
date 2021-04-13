@@ -23,19 +23,6 @@ namespace SmartEnum
             return Name; 
         }
 
-        public override bool Equals(object obj)
-        {
-            if (obj is Enumeration otherValue)
-            {
-                var typeMatches = GetType().Equals(obj.GetType());
-                var valueMatches = Id.Equals(otherValue.Id);
-
-                return typeMatches && valueMatches;
-            }
-
-            return false;
-        }
-
         public int CompareTo(object other)
         {
             return Id.CompareTo(((Enumeration)other).Id);
